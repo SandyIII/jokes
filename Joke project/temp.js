@@ -3,15 +3,14 @@
 const inserts= document.getElementById('insert');
 const result= document.getElementById("result");
 const options = document.getElementById("option");
-const tempc = document.getElementById("tempc");
 debugger
-const calculateTemp=()=>{
- //option===("celsiuis")?(input*9/5)+32: 10;
-
+ function calculateTemp(){
+ const ret =options[options.selectedIndex].value=="Celsius"? (input*9/5)+32: 120;
+ 
  console.log(inserts.value);
 console.log(options.selectedIndex);
 
-result.innerHTML=10;
+result.innerHTML=ret;
 }
 
-tempc.addEventListener('click', calculateTemp);
+//tempc.addEventListener('submit', calculateTemp);

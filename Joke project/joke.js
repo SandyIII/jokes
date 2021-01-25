@@ -1,6 +1,7 @@
         const joke = document.getElementById("joke");
         const jokebtn = document.getElementById("jokebtn");
         const loading = document.getElementById("jok");
+        
         const getNextJoke = () => {
 
             const settings = {

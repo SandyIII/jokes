@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jokes</title>
-    <link rel="stylesheet" href="P:\Z\JavaScript\Joke project\joke.css">
+    <link rel="stylesheet" href="..\\Joke project\\joke.css">
 </head>
 
 <body id="jk">
@@ -15,20 +15,19 @@
     </div>
     <br> <br>
 
-    <form id="temp" onsubmit="calculateTemp()">
-        <h2 > Temperature Converter</h2>
+    <form id="temp" onsubmit="calculateTemp(); return false">
+        <h2> Temperature Converter</h2>
         <br>
         <input type="number" id="insert" placeholder="Input" style="text-align:center">
         <select name="Input" id="option">
-            <option value="Celsius">Option </option>
             <option value="Celsius">Celsius </option>
             <option value="Fahrenheit">Fahrenheit</option>
-        </select><span> =</span>
-        <input type="number" id="result" style="text-align:center" placeholder="Result"></input>
-        <br><br><button id="tempc" >SUBMIT</button>      
+        </select> <span> =</span>
+        <output type="text" id="result" style="text-align:center" placeholder="Result"> </output>
+        <br><br>
+        <input type="submit" id="tempc"></input>
     </form>
-    <script type="text/javascript" src="P:\Z\JavaScript\Joke project\joke.js"></script>
-    <script type="text/javascript" src="P:\Z\JavaScript\Joke project\temp.js"></script>
+    <script type="text/javascript" src="..\\Joke project\\joke.js"></script>
+    <script type="text/javascript" src="..\\Joke project\\temp.js"></script>
 </body>
-
 </html>
